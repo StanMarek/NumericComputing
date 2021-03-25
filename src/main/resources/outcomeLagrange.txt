@@ -1,0 +1,28 @@
+X: [0.0, 1.0, 4.0]
+Y: [0.0, 1.0, 4.0]
+Calculated for X = 3	Outcome: 3  #funcja liniowa
+
+X: [-1.0, 1.0, 3.0, 6.0, 10.0]
+Y: [-3.0, -1.0, 1.0, 4.0, 8.0]
+Calculated for X = 5	Outcome: 3  #funcja liniowa
+
+X: [-2.0, -1.0, 3.0, 4.0]
+Y: [4.0, 1.0, 9.0, 16.0]
+Calculated for X = 1	Outcome: 1  #funkcja kwadratowa
+
+X: [0.0, 4.0, 9.0, 16.0]
+Y: [0.0, 2.0, 3.0, 4.0]
+Calculated for X = 2	Outcome: 1,183  #pierwiastek
+
+X: [0.0, 4.0, 9.0, 16.0]
+Y: [0.0, 2.0, 3.0, 4.0]
+Calculated for X = 3	Outcome: 1,632  #pierwiastek
+
+X: [0.0, 1.5707963267948966, 3.141592653589793, 4.71238898038469]
+Y: [0.0, 1.0, 1.2246467991473532E-16, -1.0]
+Calculated for X = 2	Outcome: 0,841  #sinus
+
+X: [0.0, 1.5707963267948966, 3.141592653589793, 4.71238898038469, 6.283185307179586]
+Y: [0.0, 1.0, 1.2246467991473532E-16, -1.0, -2.4492935982947064E-16]
+Calculated for X = 3	Outcome: 0,12   #sinus
+

@@ -1,0 +1,13 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¹¸µÚ8²òÎ…/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(‡µÕÙşÿÿÿÿ8´¬öÎ…/
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8²òÎ…/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¤º8²òÎ…/
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(†šÃâûÿÿÿÿ8˜ÇµÏ…/
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8˜ÇµÏ…/
+m	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÔÌ8´¬öÎ…/
+m	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÔÌ8˜ÇµÏ…/
+T
+java:S1128"7Remove this unused import 'filesController.FileReader'.(½şÀ—8ÚÆóÎ…/
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(øˆÁóøÿÿÿÿ8²òÎ…/
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(¹¸µÚ8ˆö­Ï…/

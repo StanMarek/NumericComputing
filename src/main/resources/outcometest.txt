@@ -1,0 +1,119 @@
+import numpy as n
+import matplotlib.pyplot as m
+def licznik(punkt, wspolx, numer):
+    wynik=1
+    for i in range(len(wspolx)):
+        if i!=numer:
+            wynik*=punkt-wspolx[i]
+
+    return wynik
+def mianownik(wspolx, numer):
+    wynik=1
+    for i in range(len(wspolx)):
+        if i!=numer:
+            wynik*=wspolx[numer]-wspolx[i]
+    return wynik
+def rysuj(wspolx, wspoly):
+    x=[]
+    y=[]
+    for i in n.arange(min(wspolx)-5,(max(wspolx)+5), 0.1).tolist():
+        x.append(i)
+        y.append(obliczlegrange(len(wspolx),i,wspolx,wspoly))
+
+    m.plot(x, y, label="wykres")
+    m.plot(wspolx,wspoly, "go", label="podane przez uzytkownika punkty ")
+
+def obliczlegrange(a, punkt, wspolx, wspoly):
+    Ln = []
+    for i in range(a):
+        L = licznik(punkt, wspolx, i)
+        M = mianownik(wspolx, i)
+        Ln.append(L / M)
+    wynik = 0
+    for i in range(a):
+        wynik += wspoly[i] * Ln[i]
+    return wynik
+def lagrange():
+    a=int(input("Podaj liczbe punktow \n"))
+    wspolx=[]
+    wspoly=[]
+    for i in range(a):
+        wspolx.append(float(input("podaj x \n")))
+        wspoly.append(float(input("podaj y \n")))
+    print(wspolx, wspoly)
+    punkt=float(input("Podaj dla jakiej wartosci chcesz wykonac obliczenia \n"))
+    wynik=obliczlegrange(a, punkt, wspolx, wspoly)
+    print(wynik)
+    rysuj(wspolx, wspoly)
+    m.plot(punkt,wynik,"ro",label="szukany punkt")
+    m.legend()
+    m.show()
+
+def createtab(wspolx, wspoly):
+    tab = []
+    for i in range(len(wspolx)):
+        tab.append([wspolx[i]])
+        for j in range(i + 1):
+            tab[i].append(wspoly[i] if j == 0 else None)
+    return tab
+
+
+def obliczWspol(bk, wspolx):
+    wspolczynniki = bk
+    dlg = len(bk)
+    for i in range(dlg-2, -1,-1): #(from, to, step)
+        for j in range(i, dlg-1):
+            wspolczynniki[j] = wspolczynniki[j]- (wspolx[i]*wspolczynniki[j+1])
+    return wspolczynniki[::-1]
+
+
+def wypelnijtab(tab, wspolx):
+    for i in range(len(wspolx)):
+        for j in range(len(wspolx) - 1, i, -1):
+            tab[j] = (tab[j] - tab[j - 1]) / (wspolx[j] - wspolx[j - i - 1])
+    return tab
+
+
+def wypiszWielomian(wynik):
+    print("Wielomian:", end=" ")
+    leng = len(wynik)
+    for i in range(leng):
+        if i == leng - 1:
+            print("+",str(wynik[i]))
+        elif wynik[i] < 0:
+            print(str(wynik[i]) + "+x^" + str(leng - i - 1), end="")
+        elif wynik[i] > 0:
+            print("+" + str(wynik[i]) + "+x^" + str(leng - i - 1), end="")
+
+
+def newton():
+    a = int(input("Podaj liczbe punktow \n"))
+    wspolx = []
+    wspoly = []
+    for i in range(a):
+        wspolx.append(float(input("podaj x \n")))
+        wspoly.append(float(input("podaj y \n")))
+    print(wspolx, wspoly)
+    punkt = float(input("Podaj dla jakiej wartosci chcesz wykonac obliczenia \n"))
+    tab = wspoly.copy()
+    tab = wypelnijtab(tab, wspolx)
+    print("bk:", tab)
+    wynik=obliczWspol(tab, wspolx)
+    wypiszWielomian(wynik)
+
+
+
+
+def main():
+    print("Choose your standing, human")
+    print("1.Lagrange")
+    print("2.Newton")
+    choice=input()
+
+    if choice=="1":
+        lagrange()
+    elif choice =="2":
+       newton()
+
+if __name__ == '__main__':
+    main()

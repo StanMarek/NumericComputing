@@ -1,0 +1,31 @@
+
+U	java:S106."9Replace this use of System.out or System.err by a logger.(¤º8§½ìÌ…/
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8£ŒŸĞ…/
+X	java:S1254"<This block of commented-out lines of code should be removed.(šŸÑÌ8«ãÎ…/
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8­ôÌ…/
+€
+java:S41658"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(’íë–8‘§·Î…/
+N
+java:S1153""1Directly append the argument of String.valueOf().(ùë«8¼ƒ™Î…/
+M
+java:S1153"1Directly append the argument of String.valueOf().(ÀŒšS8ŞšÎ…/
+N
+java:S1153""1Directly append the argument of String.valueOf().(ùë«8°ô—Î…/
+Z	java:S106V"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8£ŒŸĞ…/
+M
+java:S1153 "1Directly append the argument of String.valueOf().(°­ë8ıÚ›Î…/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÀŒšS8Ã…ÒÌ…/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(ùë«8¹û×Ì…/
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(øˆÁóøÿÿÿÿ8©ÎñÌ…/
+]	java:S125F"<This block of commented-out lines of code should be removed.(Æ¢óáÿÿÿÿÿ8Ô§Ğ…/
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(¹¸µÚ8´ñäÌ…/
+€
+java:S4165S"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(’íë–8£ŒŸĞ…/
+T
+java:S1128"7Remove this unused import 'filesController.FileReader'.(½şÀ—8ˆÿçÌ…/
+U	java:S106A"9Replace this use of System.out or System.err by a logger.(¹¸µÚ8§¼Ğ…/
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8´È¥Ğ…/
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(°­ë8‚ÀÔÌ…/
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8İØĞ…/
+X	java:S125O"<This block of commented-out lines of code should be removed.(šŸÑÌ8£ŒŸĞ…/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(åœ“8ÍÌ…/
