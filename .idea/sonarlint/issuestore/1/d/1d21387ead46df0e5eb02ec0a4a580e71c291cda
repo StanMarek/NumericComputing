@@ -1,22 +1,22 @@
 
+t
+java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(‰‚Æ±şÿÿÿÿ8§¼¦†/
 m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òËÊ8¾îõ¥†/
 r
 java:S1450	"PRemove the "B" field and declare it as a local variable in the relevant methods.(è««¬şÿÿÿÿ8š”Ä¦†/
-G
-java:S1068	"%Remove this unused "B" private field.(è««¬şÿÿÿÿ8ôÊ«¥†/
-t
-java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(‰‚Æ±şÿÿÿÿ8§¼¦†/
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8”ÜŠ¦†/
-B
-java:S1068"%Remove this unused "A" private field.(üº„Ó8ôÊ«¥†/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ïôáıÿÿÿÿ
-m	java:S116	"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è««¬şÿÿÿÿ8…ÅÊ¤†/
-h	java:S116"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üº„Ó8…ÅÊ¤†/
-g	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔâi8ºÖÇ¤†/
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¨Ë¦†/
 m
 java:S1450"PRemove the "A" field and declare it as a local variable in the relevant methods.(üº„Ó8š”Ä¦†/
+G
+java:S1068	"%Remove this unused "B" private field.(è««¬şÿÿÿÿ8ôÊ«¥†/
+g	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔâi8ºÖÇ¤†/
+B
+java:S1068"%Remove this unused "A" private field.(üº„Ó8ôÊ«¥†/
+m	java:S116	"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è««¬şÿÿÿÿ8…ÅÊ¤†/
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8”ÜŠ¦†/
 n	java:S116
 "MRename this field "AB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÓØıÿÿÿÿ8ºÖÇ¤†/
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¨Ë¦†/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ïôáıÿÿÿÿ
+h	java:S116"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üº„Ó8…ÅÊ¤†/

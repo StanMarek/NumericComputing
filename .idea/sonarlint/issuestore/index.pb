@@ -17,3 +17,9 @@ W
 'src/main/java/interpolation/Newton.java,5\d\5d57430bceb0788bb50ccf269795e096d77ca1be
 X
 (src/main/java/setOfEquations/Matrix.java,1\d\1d21387ead46df0e5eb02ec0a4a580e71c291cda
+T
+$src/main/java/integral/Integral.java,9\2\924c46191fa4da9b927b388cb772b6f88db6a84b
+U
+%src/main/java/integral/Functions.java,d\f\dfb9b345377a74e6dcc124b9d2bc1f9c1f883475
+V
+&src/main/java/integral/Quadrature.java,a\e\aed374b09ed52c708efc13a1dd403b30bca4618f
