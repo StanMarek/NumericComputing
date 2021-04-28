@@ -7,26 +7,18 @@ import java.util.Scanner;
 
 public class Lagrange {
 
-    private double[] x;
-    private double[] y;
-    private double[] coeefficients;
-    private double outcome;
-    private double xp;
+    private static double[] x;
+    private static double[] y;
+    private static double outcome;
+    private static double xp;
 
-    public Lagrange() {
-
-        this.x = null;
-        this.y = null;
-        this.outcome = 0;
-    }
-
-    public double calculate() {
+    public static double calculate() {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Liczba punktow: ");
         int amountOfPoints = scanner.nextInt();
-        this.x = new double[amountOfPoints];
-        this.y = new double[amountOfPoints];
+        x = new double[amountOfPoints];
+        y = new double[amountOfPoints];
         for (int i = 0; i < amountOfPoints; i++) {
             System.out.print(String.format("x{%d}: ", i + 1));
             x[i] = scanner.nextDouble();
@@ -36,7 +28,7 @@ public class Lagrange {
         System.out.println(Arrays.toString(x) + "\t" + Arrays.toString(y));
         System.out.print("Punkt do obliczenia: ");
         double XP = scanner.nextDouble();
-        this.xp = XP;
+        xp = XP;
         double p;
         for (int i = 0; i < x.length; i++) {
             p = 1.0;
@@ -49,17 +41,16 @@ public class Lagrange {
         return Math.round(outcome);
     }
 
-    public double calculateSin(){
-
+    public static double calculateSin() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Liczba punktow: ");
         int amountOfPoints = scanner.nextInt();
-        this.x = new double[amountOfPoints];
-        this.y = new double[amountOfPoints];
+        x = new double[amountOfPoints];
+        y = new double[amountOfPoints];
         System.out.println(Arrays.toString(x) + "\t" + Arrays.toString(y));
         System.out.print("Wynik to sin(x)\nPunkt do obliczenia: x = ");
         double XP = scanner.nextDouble();
-        this.xp = XP;
+        xp = XP;
         for (int i = 0; i < amountOfPoints; i++) {
             x[i] = Math.PI * 1/2 * i;
             y[i] = Math.sin(x[i]);
@@ -77,16 +68,12 @@ public class Lagrange {
         return Math.round(outcome);
     }
 
-    public double[] getX() {
+    /*public double[] getX() {
         return x;
     }
 
     public double[] getY() {
         return y;
-    }
-
-    public int degree() {
-        return coeefficients.length - 1;
     }
 
     public double getOutcome() {
@@ -95,5 +82,5 @@ public class Lagrange {
 
     public double getXp() {
         return xp;
-    }
+    }*/
 }

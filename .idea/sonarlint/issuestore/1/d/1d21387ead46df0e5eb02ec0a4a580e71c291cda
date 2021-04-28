@@ -1,22 +1,34 @@
 
-t
-java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(‰‚Æ±şÿÿÿÿ8§¼¦†/
 m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òËÊ8¾îõ¥†/
-r
-java:S1450	"PRemove the "B" field and declare it as a local variable in the relevant methods.(è««¬şÿÿÿÿ8š”Ä¦†/
-m
-java:S1450"PRemove the "A" field and declare it as a local variable in the relevant methods.(üº„Ó8š”Ä¦†/
-G
-java:S1068	"%Remove this unused "B" private field.(è««¬şÿÿÿÿ8ôÊ«¥†/
-g	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔâi8ºÖÇ¤†/
-B
-java:S1068"%Remove this unused "A" private field.(üº„Ó8ôÊ«¥†/
-m	java:S116	"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è««¬şÿÿÿÿ8…ÅÊ¤†/
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8”ÜŠ¦†/
-n	java:S116
-"MRename this field "AB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÓØıÿÿÿÿ8ºÖÇ¤†/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ïôáıÿÿÿÿ
 O
 java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¨Ë¦†/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ïôáıÿÿÿÿ
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8”ÜŠ¦†/
+m
+java:S1450"PRemove the "A" field and declare it as a local variable in the relevant methods.(üº„Ó8š”Ä¦†/
+r
+java:S1450	"PRemove the "B" field and declare it as a local variable in the relevant methods.(è««¬şÿÿÿÿ8š”Ä¦†/
 h	java:S116"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üº„Ó8…ÅÊ¤†/
+m	java:S116	"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è««¬şÿÿÿÿ8…ÅÊ¤†/
+n	java:S116
+"MRename this field "AB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÓØıÿÿÿÿ8ºÖÇ¤†/
+g	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔâi8ºÖÇ¤†/
+K
+java:S62127"/Declare this local variable with "var" instead.(°¿¤=8Ú¢¶ï/
+L
+java:S6212<"/Declare this local variable with "var" instead.(…Ïœš8Ú¢¶ï/
+t
+java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(‰‚Æ±şÿÿÿÿ8§¼¦†/
+K
+java:S6212R"/Declare this local variable with "var" instead.(°¿¤=8Ü¢¶ï/
+L
+java:S6212T"/Declare this local variable with "var" instead.(òËÊ8Ü¢¶ï/
+L
+java:S6212V"/Declare this local variable with "var" instead.(ÿğê¨8çÙßï/
+L
+java:S6212\"/Declare this local variable with "var" instead.(…Ïœš8çÙßï/
+B
+java:S1068"%Remove this unused "A" private field.(üº„Ó8ôÊ«¥†/
+G
+java:S1068	"%Remove this unused "B" private field.(è««¬şÿÿÿÿ8ôÊ«¥†/

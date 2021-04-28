@@ -7,20 +7,11 @@ import java.util.Scanner;
 
 public class Newton {
 
-    double[] x;
-    double[] y;
-    double[] coefficients;
-    double outcome;
-    double xp;
+    private static double[] x;
+    private static double[] y;
+    private static double[] coefficients;
 
-    public Newton(){
-        this.x = null;
-        this.y = null;
-        this.coefficients = null;
-        this.outcome = 0;
-    }
-
-    private void printPolynomial(double[] output){
+    private static void printPolynomial(double[] output){
 
         System.out.print("f(x) = ");
         int leng = output.length;
@@ -33,47 +24,21 @@ public class Newton {
             else if(output[i] > 0)
                 System.out.print("+" + String.valueOf(output[i]) + "x^" + String.valueOf((leng - i -1)));
         }
+        System.out.println();
     }
 
-    public void calculate(){
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Liczba punktow: ");
-        int amountOfPoints = scanner.nextInt();
-        this.x = new double[amountOfPoints];
-        this.y = new double[amountOfPoints];
-        for (int i = 0; i < amountOfPoints; i++) {
-            System.out.print(String.format("x{%d}: ", i + 1));
-            x[i] = scanner.nextDouble();
-            System.out.print(String.format("y{%d}: ", i  + 1));
-            y[i] = scanner.nextDouble();
-        }
+    public static void calculate(){
+        getXFromInput();
         System.out.println(Arrays.toString(x) + "\t" + Arrays.toString(y));
-        //System.out.print("Punkt do obliczenia: ");
-        //double point = scanner.nextDouble();
         double[] array = new double[y.length];
         System.arraycopy(y, 0, array, 0, y.length);
         array = fillArray(array, x);
         double[] output = calculateCoefficients(array, x);
         printPolynomial(output);
-        System.out.println();
     }
 
-    public void calculateSin(){
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Liczba punktow: ");
-        int amountOfPoints = scanner.nextInt();
-        this.x = new double[amountOfPoints];
-        this.y = new double[amountOfPoints];
-
-        //System.out.print("Wynik to sin(x)\nPunkt do obliczenia: x = ");
-        //double XP = scanner.nextDouble();
-        //this.xp = XP;
-        for (int i = 0; i < amountOfPoints; i++) {
-            x[i] = Math.PI * 1/2 * i;
-            y[i] = Math.sin(x[i]);
-        }
+    public static void calculateSin(){
+        fillWithSinus();
         System.out.println(Arrays.toString(x) + "\t" + Arrays.toString(y));
         System.out.println(Arrays.toString(x) + "\t" + Arrays.toString(y));
         //System.out.print("Punkt do obliczenia: ");
@@ -83,10 +48,9 @@ public class Newton {
         array = fillArray(array, x);
         double[] output = calculateCoefficients(array, x);
         printPolynomial(output);
-        System.out.println();
     }
 
-    private double[] calculateCoefficients(double[] bk, double[] xs) {
+    private static double[] calculateCoefficients(double[] bk, double[] xs) {
 
         coefficients = bk;
         int length = bk.length;
@@ -104,7 +68,7 @@ public class Newton {
         return output;
     }
 
-    private double[] fillArray(double[] array, double[] ys){
+    private static double[] fillArray(double[] array, double[] ys){
 
         for(int i = 0; i < ys.length; i++){
             for(int j = ys.length -1 ; j > i; j--){
@@ -115,7 +79,33 @@ public class Newton {
         return array;
     }
 
-    public double[] getX() {
+    private static void getXFromInput(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Liczba punktow: ");
+        int amountOfPoints = scanner.nextInt();
+        x = new double[amountOfPoints];
+        y = new double[amountOfPoints];
+        for (int i = 0; i < amountOfPoints; i++) {
+            System.out.print(String.format("x{%d}: ", i + 1));
+            x[i] = scanner.nextDouble();
+            System.out.print(String.format("y{%d}: ", i  + 1));
+            y[i] = scanner.nextDouble();
+        }
+    }
+
+    private static void fillWithSinus(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Liczba punktow: ");
+        int amountOfPoints = scanner.nextInt();
+        x = new double[amountOfPoints];
+        y = new double[amountOfPoints];
+        for (int i = 0; i < amountOfPoints; i++) {
+            x[i] = Math.PI * 1/2 * i;
+            y[i] = Math.sin(x[i]);
+        }
+    }
+
+   /* public double[] getX() {
         return x;
     }
 
@@ -133,5 +123,5 @@ public class Newton {
 
     public double getXp() {
         return xp;
-    }
+    }*/
 }

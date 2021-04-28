@@ -5,7 +5,6 @@ import java.util.function.Function;
 public class Quadrature {
 
     public static double integrateGaussQuadrature(Function f, double[]x, double []A, double a, double b) {
-
         if (b < a) {
             double temp = a;
             a = b;
@@ -23,5 +22,4 @@ public class Quadrature {
 
         return sum*length;
     }
-
 }
