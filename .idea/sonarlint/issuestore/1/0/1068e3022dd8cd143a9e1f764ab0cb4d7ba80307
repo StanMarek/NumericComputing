@@ -3,38 +3,35 @@ m	java:S117"QRename this local variable to match the regular expression '^[a-
 m	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÔÌ8˜ÇµÏ…/
 T
 java:S1128"7Remove this unused import 'filesController.FileReader'.(½şÀ—8ÚÆóÎ…/
-W
-java:S1118":Add a private constructor to hide the implicit public one.(Ãˆûø8¸€¯ï/
 Q
-java:S6212"/Declare this local variable with "var" instead.(ù ƒ‘üÿÿÿÿ8ÈÕÈ/
+java:S6212"/Declare this local variable with "var" instead.(ù ƒ‘üÿÿÿÿ8¢½¸È“/
 U	java:S106"9Replace this use of System.out or System.err by a logger.(¹¸µÚ8ˆö­Ï…/
 Q
-java:S6212"/Declare this local variable with "var" instead.( ¿ú­ûÿÿÿÿ8ÍÕÈ/
+java:S6212"/Declare this local variable with "var" instead.( ¿ú­ûÿÿÿÿ8©½¸È“/
 Q
-java:S6212"/Declare this local variable with "var" instead.(€¬²úÿÿÿÿ8ÎÕÈ/
+java:S6212"/Declare this local variable with "var" instead.(€¬²úÿÿÿÿ8ª½¸È“/
 U	java:S106"9Replace this use of System.out or System.err by a logger.(¤º8²òÎ…/
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(øˆÁóøÿÿÿÿ8²òÎ…/
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8˜ÇµÏ…/
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(‡µÕÙşÿÿÿÿ8´¬öÎ…/
 L
-java:S6212"/Declare this local variable with "var" instead.(ÌÔÌ8ÕÕÈ/
+java:S6212"/Declare this local variable with "var" instead.(ÌÔÌ8²½¸È“/
 Q
-java:S6212!"/Declare this local variable with "var" instead.(áÛî¬ûÿÿÿÿ8ÖÕÈ/
+java:S6212!"/Declare this local variable with "var" instead.(áÛî¬ûÿÿÿÿ8²½¸È“/
 Q
-java:S6212#"/Declare this local variable with "var" instead.(åÂˆÿÿÿÿÿÿ8ÖÕÈ/
+java:S6212#"/Declare this local variable with "var" instead.(åÂˆÿÿÿÿÿÿ8³½¸È“/
 Q
-java:S6212-"/Declare this local variable with "var" instead.(ù ƒ‘üÿÿÿÿ8ÚÕÈ/
+java:S6212-"/Declare this local variable with "var" instead.(ù ƒ‘üÿÿÿÿ8´½¸È“/
 U	java:S106."9Replace this use of System.out or System.err by a logger.(¹¸µÚ8²òÎ…/
 Q
-java:S6212/"/Declare this local variable with "var" instead.( ¿ú­ûÿÿÿÿ8ÜÕÈ/
+java:S6212/"/Declare this local variable with "var" instead.( ¿ú­ûÿÿÿÿ8¶½¸È“/
 Z	java:S1062"9Replace this use of System.out or System.err by a logger.(Ø³Óşÿÿÿÿ8²òÎ…/
 Z	java:S1063"9Replace this use of System.out or System.err by a logger.(†šÃâûÿÿÿÿ8˜ÇµÏ…/
 L
-java:S62124"/Declare this local variable with "var" instead.(ÌÔÌ8ßÕÈ/
+java:S62124"/Declare this local variable with "var" instead.(ÌÔÌ8¸½¸È“/
 Q
-java:S62126"/Declare this local variable with "var" instead.(€¬²úÿÿÿÿ8àÕÈ/
+java:S62126"/Declare this local variable with "var" instead.(€¬²úÿÿÿÿ8¸½¸È“/
 Q
-java:S6212<"/Declare this local variable with "var" instead.(áÛî¬ûÿÿÿÿ8áÕÈ/
+java:S6212<"/Declare this local variable with "var" instead.(áÛî¬ûÿÿÿÿ8¹½¸È“/
 Q
-java:S6212>"/Declare this local variable with "var" instead.(åÂˆÿÿÿÿÿÿ8âÕÈ/
-]	java:S125G"<This block of commented-out lines of code should be removed.(Şå·¿ùÿÿÿÿ8õÁ®ï/
+java:S6212>"/Declare this local variable with "var" instead.(åÂˆÿÿÿÿÿÿ8º½¸È“/

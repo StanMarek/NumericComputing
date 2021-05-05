@@ -1,9 +1,9 @@
 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›ıûøÿÿÿÿ
+Q
+java:S1172"/Remove this unused method parameter "fileName".(İæ¦çúÿÿÿÿ8åùûÎ…/
 e
 java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(õé»Û8ôÌ¹„…/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›ıûøÿÿÿÿ
 W
 java:S1118
 ":Add a private constructor to hide the implicit public one.(»»Œ8åÿ¸·ƒ/
-Q
-java:S1172"/Remove this unused method parameter "fileName".(İæ¦çúÿÿÿÿ8åùûÎ…/

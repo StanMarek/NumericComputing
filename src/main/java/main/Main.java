@@ -6,8 +6,12 @@ import integral.Integral;
 import integral.Quadrature;
 import interpolation.Lagrange;
 import interpolation.Newton;
+import interpolation.Orthogonalization;
 import setOfEquations.Matrix;
+
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -34,6 +38,7 @@ public class Main {
                 case 4 -> runGaussCroute();
                 case 5 -> runIntegration();
                 case 6 -> runGaussLegendreQuadrature();
+                case 7 -> runGramSchmidt();
             }
         }
     }
@@ -140,6 +145,37 @@ public class Main {
             double[] A = { 0.236927, 0.478629, 0.568889, 0.478629, 0.236927};
             System.out.println("f1 n: " + x.length + " = " + Quadrature.integrateGaussQuadrature(fun -> Functions.x2sin3x((double) fun), x, A, 0, 1));
             System.out.println("f2 n: " + x.length + " = " + Quadrature.integrateGaussQuadrature(fun -> Functions.expx2xminus1((double)fun), x, A,-1, 1));
+        }
+    }
+
+    static void runGramSchmidt(){
+        double[][] A = new double[][]{
+                {12,-51,4},
+                {6, 167,-68},
+                {-4,24,-41}
+        };
+        double[][] A2 = new double[][]{
+                {0,1,1},
+                {3,0,1},
+                {4,1,3}
+        };
+        double[][] A3 = new double[][]{
+                {2,0,2},
+                {1,3,1},
+                {2,2,3}
+        };
+        Orthogonalization gr = new Orthogonalization();
+        gr.QRDecomposition(A);
+        gr.QRDecomposition(A2);
+        gr.QRDecomposition(A3);
+
+        ArrayList<double[]> Am = new ArrayList<double[]>();
+        Am.add(new double[]{12,-51,4});
+        Am.add(new double[]{6, 167,-68});
+        Am.add(new double[]{-4,24,-41});
+        ArrayList<double[]> out =  gr.gramSchmidt(Am);
+        for(int i = 0; i < out.size(); i++){
+            System.out.println(Arrays.toString(out.get(i)));
         }
     }
 }

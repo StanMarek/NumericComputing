@@ -1,0 +1,67 @@
+
+
+java:S1319P"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ì‡®Ã8ìˆÀç“/
+
+java:S1319P"pThe type of the "array" object should be an interface such as "List" rather than the implementation "ArrayList".(ì‡®Ã8ìˆÀç“/
+[
+java:S3516-"9Refactor this method to not always return the same value.(Ï·À§úÿÿÿÿ8Â´´ç“/
+€
+java:S1488f"cImmediately return this expression instead of assigning it to the temporary variable "finalVector".(É¤½®8õˆÀç“/
+f
+java:S1450	"PRemove the "A" field and declare it as a local variable in the relevant methods.(üº„Ó
+f
+java:S1450
+"PRemove the "Q" field and declare it as a local variable in the relevant methods.(©Ş…ì
+k
+java:S1450"PRemove the "R" field and declare it as a local variable in the relevant methods.(©‰Ş›şÿÿÿÿ
+a	java:S116	"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üº„Ó
+a	java:S116
+"LRename this field "Q" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Ş…ì
+f	java:S116"LRename this field "R" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©‰Ş›şÿÿÿÿ
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÑĞÿøÿÿÿÿ8üëÒç“/
+E
+java:S6212"/Declare this local variable with "var" instead.(üúË¶
+J
+java:S6212"/Declare this local variable with "var" instead.(¢¿ü’şÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(È÷§÷
+J
+java:S6212"/Declare this local variable with "var" instead.(¾ˆ †ûÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(Õ¡ÔÀıÿÿÿÿ
+J
+java:S6212 "/Declare this local variable with "var" instead.(¾ˆ †ûÿÿÿÿ
+J
+java:S6212""/Declare this local variable with "var" instead.(¾ˆ †ûÿÿÿÿ
+<
+java:S11725"&Remove these unused method parameters.(ÉÓå¸
+E
+java:S62126"/Declare this local variable with "var" instead.(ø€¯´
+J
+java:S62127"/Declare this local variable with "var" instead.(ÌÕ‘Öıÿÿÿÿ
+]	java:S125:"<This block of commented-out lines of code should be removed.(ç›¾İüÿÿÿÿ8…µ´ç“/
+E
+java:S6212@"/Declare this local variable with "var" instead.(éÇì‰
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(Ã©¡ó
+J
+java:S6212H"/Declare this local variable with "var" instead.(êÄÇ¢üÿÿÿÿ
+E
+java:S6212I"/Declare this local variable with "var" instead.(¼î©í
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ÀâõÁşÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+L
+java:S6212V"/Declare this local variable with "var" instead.(›«½ù8‡‰Àç“/
+Q
+java:S6212m"/Declare this local variable with "var" instead.(À¬éßşÿÿÿÿ8Š‰Àç“/
+L
+java:S6212v"/Declare this local variable with "var" instead.(Åïƒ×8‹‰Àç“/
+L
+java:S6212w"/Declare this local variable with "var" instead.(Ñ‰Çî8‹‰Àç“/
+M
+java:S6212€"/Declare this local variable with "var" instead.(´¡»€8Œ‰Àç“/
+R
+java:S6212"/Declare this local variable with "var" instead.(À¬éßşÿÿÿÿ8Œ‰Àç“/
+M
+java:S6212‹"/Declare this local variable with "var" instead.(Ñ‰Çî8Œ‰Àç“/
+L
+java:S1144>"/Remove this unused private "scalarProd" method.(èşÀá8‡µ´ç“/

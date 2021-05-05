@@ -15,19 +15,19 @@ n	java:S116
 "MRename this field "AB" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÓØıÿÿÿÿ8ºÖÇ¤†/
 g	java:S116"LRename this field "X" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔâi8ºÖÇ¤†/
 K
-java:S62127"/Declare this local variable with "var" instead.(°¿¤=8Ú¢¶ï/
+java:S62127"/Declare this local variable with "var" instead.(°¿¤=8È“/
 L
-java:S6212<"/Declare this local variable with "var" instead.(…Ïœš8Ú¢¶ï/
+java:S6212<"/Declare this local variable with "var" instead.(…Ïœš8œÈ“/
 t
 java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(‰‚Æ±şÿÿÿÿ8§¼¦†/
 K
-java:S6212R"/Declare this local variable with "var" instead.(°¿¤=8Ü¢¶ï/
+java:S6212R"/Declare this local variable with "var" instead.(°¿¤=8€ŸÈ“/
 L
-java:S6212T"/Declare this local variable with "var" instead.(òËÊ8Ü¢¶ï/
+java:S6212T"/Declare this local variable with "var" instead.(òËÊ8ŸÈ“/
 L
-java:S6212V"/Declare this local variable with "var" instead.(ÿğê¨8çÙßï/
+java:S6212V"/Declare this local variable with "var" instead.(ÿğê¨8 ŸÈ“/
 L
-java:S6212\"/Declare this local variable with "var" instead.(…Ïœš8çÙßï/
+java:S6212\"/Declare this local variable with "var" instead.(…Ïœš8°ŸÈ“/
 B
 java:S1068"%Remove this unused "A" private field.(üº„Ó8ôÊ«¥†/
 G

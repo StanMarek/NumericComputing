@@ -68,7 +68,7 @@ public class Lagrange {
         return Math.round(outcome);
     }
 
-    /*public double[] getX() {
+    public double[] getX() {
         return x;
     }
 
@@ -82,5 +82,5 @@ public class Lagrange {
 
     public double getXp() {
         return xp;
-    }*/
+    }
 }
