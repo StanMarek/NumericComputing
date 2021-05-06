@@ -16,20 +16,26 @@ import java.util.Scanner;
 
 public class Main {
 
+    static void printMenu() {
+        System.out.print("0. Exit\n" +
+                "1. Lagrange\n" +
+                "2. Newton\n" +
+                "3. Gauss elimination\n" +
+                "4. Gauss Croute elimination\n" +
+                "5. Integration\n" +
+                "6. Quadrature\n" +
+                "7. QR Decomposition, Gram-Schmidt\n" +
+                "Choice: ");
+    }
+
     public static void main(String[] args) throws IOException {
         boolean running = true;
-        while (running) {
-            System.out.print("0. Exit\n" +
-                    "1. Lagrange\n" +
-                    "2. Newton\n" +
-                    "3. Gauss elimination\n" +
-                    "4. Gauss Croute elimination\n" +
-                    "5. Integration\n" +
-                    "6. Quadrature\n" +
-                    "Choice: ");
-            Scanner program = new Scanner(System.in);
-            int choice = program.nextInt();
+        Scanner program = new Scanner(System.in);
+        int choice;
 
+        while (running) {
+            printMenu();
+            choice = program.nextInt();
             switch (choice){
                 case 0 -> { running = false; break; }
                 case 1 -> runLagrange();
@@ -96,6 +102,7 @@ public class Main {
 
     static void runIntegration(){
 
+        System.out.println("--- Integration ---");
         int n = 10;
 
         for(long i = n; i < 10000000; i*=10 ) {
@@ -112,6 +119,7 @@ public class Main {
 
     static void runGaussLegendreQuadrature(){
 
+        System.out.println("--- GAUSS-LEGENDRE QUADRATURE ---");
         double simpsonF1 = Integral.simpson(fun -> Functions.x2sin3x((double) fun), Math.pow(10, 5), 0, 1);
         double simpsonF2 =  Integral.simpson(fun -> Functions.expx2xminus1((double) fun), Math.pow(10, 5), -1, 1);
 
@@ -149,6 +157,8 @@ public class Main {
     }
 
     static void runGramSchmidt(){
+
+        System.out.println("--- QR DECOMP, GRAM-SCHMIDT ---");
         double[][] A = new double[][]{
                 {12,-51,4},
                 {6, 167,-68},
