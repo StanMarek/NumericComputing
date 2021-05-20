@@ -1,13 +1,9 @@
-package main;
-
-import filesController.FileSaver;
-import integral.Functions;
-import integral.Integral;
-import integral.Quadrature;
-import interpolation.Lagrange;
-import interpolation.Newton;
-import interpolation.Orthogonalization;
-import setOfEquations.Matrix;
+import lib.filescontroller.FileSaver;
+import lib.integral.Functions;
+import lib.integral.Integral;
+import lib.integral.Quadrature;
+import lib.interpolation.*;
+import lib.setoffequations.Matrix;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,9 +18,11 @@ public class Main {
                 "2. Newton\n" +
                 "3. Gauss elimination\n" +
                 "4. Gauss Croute elimination\n" +
-                "5. Integration\n" +
-                "6. Quadrature\n" +
-                "7. QR Decomposition, Gram-Schmidt\n" +
+                "5. Doolittle algorith\n" +
+                "6. Integration\n" +
+                "7. Quadrature\n" +
+                "8. QR Decomposition, Gram-Schmidt\n" +
+                "9. Approximation\n" +
                 "Choice: ");
     }
 
@@ -37,14 +35,16 @@ public class Main {
             printMenu();
             choice = program.nextInt();
             switch (choice){
-                case 0 -> { running = false; break; }
+                case 0 -> running = false;
                 case 1 -> runLagrange();
                 case 2 -> runNewton();
                 case 3 -> runGauss();
                 case 4 -> runGaussCroute();
-                case 5 -> runIntegration();
-                case 6 -> runGaussLegendreQuadrature();
-                case 7 -> runGramSchmidt();
+                case 5 -> runDoolittle();
+                case 6 -> runIntegration();
+                case 7 -> runGaussLegendreQuadrature();
+                case 8 -> runGramSchmidt();
+                case 9 -> runApprox();
             }
         }
     }
@@ -54,10 +54,11 @@ public class Main {
         System.out.println("--- LAGRANGE ---");
 
         Lagrange lagrange = new Lagrange();
-        //double output = lagrange.calculate();
-        double output = lagrange.calculateSin();
+        double output = lagrange.calculate();
+        double outputSin = lagrange.calculateSin();
         FileSaver.saveToFile("outcometest3", lagrange);
         System.out.println(output);
+        System.out.println(outputSin);
     }
 
     static void runNewton(){
@@ -98,6 +99,35 @@ public class Main {
             }
             else
                 System.out.println("Blad");
+    }
+
+    static void runDoolittle() {
+        double[][] a = new double[][]{
+            {60,30,20},
+            {30,20,15},
+            {20,15,12},
+        };
+        double[][] b = new double[][]{
+                {3,0,1},
+                {0,-1,3},
+                {1,3,0},
+        };
+        double[][] c = new double[][]{
+                {4,1/2,1},
+                {1/2,17,16,1/4},
+                {1,1/4,33/64}
+        };
+        double[][] d = new double[][]{
+                {2,1,-2},
+                {4,2,-1},
+                {6,3,11}
+        };
+
+        Matrix.print(Matrix.DoolittleAlgorithm(a));
+        Matrix.print(Matrix.DoolittleAlgorithm(b));
+        Matrix.print(Matrix.DoolittleAlgorithm(c));
+        Matrix.print(Matrix.DoolittleAlgorithm(d));
+
     }
 
     static void runIntegration(){
@@ -187,5 +217,39 @@ public class Main {
         for(int i = 0; i < out.size(); i++){
             System.out.println(Arrays.toString(out.get(i)));
         }
+    }
+
+    static void runApprox() {
+        double[][] base = new double[5][5];
+        Approx a = new Approx();
+
+        Point2D[] point = new Point2D[5];
+
+        point[0] = new Point2D(-1, 4.55);
+        point[1] = new Point2D(-0.5, 2.25);
+        point[2] = new Point2D(0, 1);
+        point[3] = new Point2D(0.5, 0.02);
+        point[4] = new Point2D(1, -1.47);
+        /*point[0] = new Point2D(-1, -1);
+        point[1] = new Point2D(-0.5, -0.5);
+        point[2] = new Point2D(0, 0);
+        point[3] = new Point2D(0.5, 0.5);
+        point[4] = new Point2D(1, -1);*/
+       /* point[0] = new Point2D(-1, 3);
+        point[1] = new Point2D(-0.5, -1);
+        point[2] = new Point2D(0, 0);
+        point[3] = new Point2D(0.5, 5);
+        point[4] = new Point2D(1, -7);*/
+        double[] out =a.aproksymacja_wiel(base, point);
+
+        System.out.println(Arrays.toString(out));
+        for(int i = 0 ; i < out.length; i++){
+            int power = out.length - (i + 1);
+            if(out[i] < 0)
+                System.out.print(" " + out[i] + "x^" + power);
+            if(out[i] >= 0)
+                System.out.println(" + " + out[i] + "x^" + power);
+        }
+        System.out.println();
     }
 }

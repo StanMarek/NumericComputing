@@ -1,6 +1,4 @@
-package interpolation;
-
-import filesController.FileReader;
+package lib.interpolation;
 
 import java.util.Arrays;
 import java.util.Scanner;

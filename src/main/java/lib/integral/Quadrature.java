@@ -1,4 +1,4 @@
-package integral;
+package lib.integral;
 
 import java.util.function.Function;
 

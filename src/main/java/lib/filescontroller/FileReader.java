@@ -1,4 +1,4 @@
-package filesController;
+package lib.filescontroller;
 
 import java.io.File;
 import java.io.FileNotFoundException;

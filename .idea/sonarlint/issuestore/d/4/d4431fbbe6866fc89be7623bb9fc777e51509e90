@@ -1,19 +1,0 @@
-
-b
-java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ÓÌáŞ8—Çéƒ…/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›ıûøÿÿÿÿ
-o
-java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ø‹¦·8ıŠêƒ…/
-W
-java:S1118":Add a private constructor to hide the implicit public one.(¢ñ°ä8µß²·ƒ/
-Z
-java:S1197,"8Move the array designator from the variable to the type.(Æ¹›ÿÿÿÿÿ8¸õàƒ…/
-g
-java:S2259%"EA "NullPointerException" could be thrown; "scanner" is nullable here.(‡ë÷±ÿÿÿÿÿ8€èƒ…/
-g
-java:S2259"EA "NullPointerException" could be thrown; "scanner" is nullable here.(‡ë÷±ÿÿÿÿÿ8„¹Øƒ…/
-g
-java:S2095 "EUse try-with-resources or close this "Scanner" in a "finally" clause.(©‘ÓÒÿÿÿÿÿ8ıŠêƒ…/
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù®·¬8ÊñÕƒ…/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¸é°ıÿÿÿÿ8ÊñÕƒ…/

@@ -1,7 +1,4 @@
-package setOfEquations;
-
-import java.util.Arrays;
-import java.util.Collections;
+package lib.setoffequations;
 
 public class Matrix {
 
@@ -116,6 +113,27 @@ public class Matrix {
         return true;
     }
 
+    public static double[][] DoolittleAlgorithm(double[][] A) {
+        final int n = A.length;
+        double[][] result = new double[n][n];
+        double eps = 1e-12;
+        for (int k = 0; k < n - 1; k++) {
+            if (Math.abs(A[k][k]) < eps)
+                return null;
+            for (int i = k + 1; i < n; i++)
+                A[i][k] /= A[k][k];
+            for (int i = k + 1; i < n; i++)
+                for (int j = k + 1; j < n; j++)
+                    A[i][j] -= A[i][k] * A[k][j];
+        }
+        for(int i=0 ; i < n ; i++) {
+            for(int j=0 ; j < n ; j++) {
+                result[i][j] = A[i][j];
+            }
+        }
+        return result;
+    }
+
     private void swap (int[] a, int i, int j) {
         int t = a[i];
         a[i] = a[j];
@@ -124,5 +142,14 @@ public class Matrix {
 
     public double[] getX() {
         return X;
+    }
+
+    public static void print(double[][] matrix){
+        for(int i = 0; i < matrix.length; i++) {
+            for(int j = 0; j < matrix.length; j++){
+                System.out.print(matrix[i][j] + "\s");
+            }
+            System.out.println();
+        }
     }
 }

@@ -1,6 +1,6 @@
-package filesController;
+package lib.filescontroller;
 
-import interpolation.Lagrange;
+import lib.interpolation.Lagrange;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,6 +12,7 @@ public class FileSaver {
     /**
      * saves outcome to file in resource folder
      * @param fileName - name of *.txt file
+     * @param lagrange - reference to lagrange instance which must be saved to file
      */
     public static void saveToFile(String fileName, Lagrange lagrange) throws IOException {
 

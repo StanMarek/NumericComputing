@@ -1,4 +1,4 @@
-package interpolation;
+package lib.interpolation;
 
 import org.decimal4j.util.DoubleRounder;
 
@@ -79,7 +79,7 @@ public class Orthogonalization {
 
     public ArrayList<double[]> gramSchmidt(ArrayList<double[]> array)
     {
-        ArrayList< double[] > finalArray= new ArrayList<>();
+        ArrayList<double[]> finalArray= new ArrayList<>();
 
         finalArray.add(multiplyScalarPerVector(1/(calculateVectorLength(array.get(0))), array.get(0)));
 
